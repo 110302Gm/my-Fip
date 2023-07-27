@@ -26,3 +26,12 @@ input, textarea {
     margin: 0px;
     padding:0px;
 }
+section h2,section h3, section p {
+    padding-left:15px;
+}
+.spacer {
+    margin-top: 60px;
+}
+.txt-spacer {
+    margin-top: 30px;
+}
