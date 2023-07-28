@@ -187,9 +187,7 @@ body {
    @media screen and (max-width: 700px) 
     .tile,
     .tile:nth-child(2),
-    .tile:nth-child(4),
-    .tile:nth-child(6),
-    .tile:nth-child(8) {
+    { 
       max-width: 97%;
     } 
 /*end of basic styling*/
