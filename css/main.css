@@ -180,16 +180,96 @@ body {
     opacity: 1; 
     max-height: 999px; 
     transition: opacity 1s, max-height 1s;
-  }*/
+  }
   
 
   
-   @media screen and (max-width: 700px) 
+   /* @media screen and (max-width: 700px) 
     .tile,
     .tile:nth-child(2),
     { 
       max-width: 97%;
-    } 
+    }  */
 /*end of basic styling*/
 
+
+
+/*start of lightbox*/
+.gold_bumper {
+    width: 100%;
+    height: 40px;
+    background-color:#e1b335;
+
+    transition: height 0.3s ease-out;
+
+    position:relative;
+}
+
+.lightbox { 
+    width:auto; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position:relative;
+    top: 0;
+    left: 0;
+
+    /* background-color: rgba(0, 0, 0, 0.85);
+    background-image: ;
+    background-repeat: no-repeat; */
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 50px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+/* .lightbox_close {
+    position: relative;
+    top: 30px;
+    left: 95%;
+
+    color:#dd9528;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+} */
+
+/* .lightbox_close:hover { opacity: 0.5; color: grey; }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+} */
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display:block; }
+
+
+/* footer rules here */
+footer {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+
+    height: 80px;
+    background-color:#e1b335;
+}
 
